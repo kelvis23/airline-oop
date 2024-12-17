@@ -14,9 +14,23 @@ public class AirlineApp1 {
     }
 
     public static  void rum (AirlineReader airlineReader){
+        Scanner scanner = new Scanner(System.in);
         Airleine airleine = airlineReader.read();
+        // 1 pedir los datos de la areoliniea
         System.out.println("datos de la areolina");
        airleine.airleineInfo();
+       // 2 pide al usuario un numero
+        System.out.println(" introduce en numero de vuelo");
+        int num = scanner.nextInt();
+        scanner.nextLine();
+        // 3  busca el buelo con ese numero de vuelo
+        airleine.show(num);
+        // 4 pide al usuurio un pasagero
+        System.out.println("introduce un pasagero");
+        String nif = scanner.nextLine();
+
+        // 5 Busca a ese pasajero dento del vuelo
+
 
     }
     public void showAirline(){

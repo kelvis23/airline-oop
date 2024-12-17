@@ -12,12 +12,28 @@ public class Airleine {
         this.flights = flights;
     }
 
-    public void airleineInfo (){
-        System.out.println("nombre"+name+"vuelo");
-        for (var flight : flights){
+    public void airleineInfo() {
+        System.out.println("nombre: " + name +".");
+        for (var flight : flights) {
             flight.flightInfo();
         }
     }
+    public Flight[] show(int num){
+        for ( var vuelo :flights){
+            if (vuelo.getFlighNumber()==num){
+
+            }
+        }
+        return null;
+    }
+
+    public  void show1 (String nif){
+        for (var vuel: flights){
+            for (var pasage : flights.g)
+        }
+    }
+
+
     public String getName() {
         return name;
     }

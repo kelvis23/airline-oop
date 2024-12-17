@@ -26,7 +26,7 @@ public class FlightReader {
         System.out.println("Puerta de enbarque del vuelo");
         int gateNumber = scanner.nextInt();
         scanner.nextLine();
-        System.out.println("numero de pasajeros ");
+        System.out.println("cuantos pasageros tiene el vuelo");
         int size = scanner.nextInt();
         scanner.nextLine();
         Passenger[] passengers = new Passenger[size];
