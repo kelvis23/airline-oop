@@ -17,7 +17,12 @@ public class Flight {
         this.gateNumeber = gateNumeber;
         this.passengers = passengers;
     }
-
+    public void  flightInfo(){
+        System.out.println("numero de vuelo " +flighNumber+"origen" +origin+"destino"+destination+"puerta de envarque"+gateNumeber+"pasegeros");
+        for (var pasajero : passengers){
+            pasajero.passengerInfo();
+        }
+    }
     public int getFlighNumber() {
         return flighNumber;
     }
