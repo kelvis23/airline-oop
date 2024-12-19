@@ -25,15 +25,19 @@ public class AirlineApp1 {
         scanner.nextLine();
         // 3  busca el buelo con ese numero de vuelo
         airleine.show(num);
-        // 4 pide al usuurio un pasagero
+        // 4 pide al suurio un pasagero
         System.out.println("introduce un pasagero");
         String nif = scanner.nextLine();
 
         // 5 Busca a ese pasajero dento del vuelo
+        airleine.showPassengerFlights(nif);
 
+        // 6 MUESTRA LOS DATOS DEL PASAGERO
+
+        // 7 PIDE UN NUMERO DE ASIENTO
+        System.out.println("introduce el numero de asiento");
+        // 8 CABIAR EL ASIENTO DEL PASAGERO
 
     }
-    public void showAirline(){
 
-    }
 }

@@ -21,6 +21,23 @@ public class Flight {
         System.out.print(" numero de vuelo: " +flighNumber+", origen: " +origin+", destino: "+destination+", puerta de envarque: "+gateNumeber+"");
         for (var pasajero : passengers) pasajero.passengerInfo();
     }
+    public boolean hasPassenger (String nif){
+        for (var passenger :passengers){
+            if (passenger.getNif().equals(nif)){
+                return true;
+            }
+        }
+         return false;
+    }
+    public Passenger findpassseger (String nif){
+        for (var passeger : passengers){
+            if (passeger.getNif().equals(nif)){
+                return passeger;
+            }
+        }
+        return null;
+
+    }
     public int getFlighNumber() {
         return flighNumber;
     }

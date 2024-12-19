@@ -22,6 +22,15 @@ public class AirlineAppMenu {
             System.out.println("6.salir");
             option = scanner.nextInt();
             scanner.nextLine();
+            if (option ==1){
+                
+            } else if (option ==2){
+                
+            } else if (option<3) {
+                
+            } else if (option <4) {
+                
+            }
         }while (option !=5);
     }
 }

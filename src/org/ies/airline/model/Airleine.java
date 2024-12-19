@@ -13,24 +13,63 @@ public class Airleine {
     }
 
     public void airleineInfo() {
-        System.out.println("nombre: " + name +".");
+        System.out.println("Aereolinia : " + name + ".");
         for (var flight : flights) {
             flight.flightInfo();
         }
     }
-    public Flight[] show(int num){
-        for ( var vuelo :flights){
-            if (vuelo.getFlighNumber()==num){
 
+    public void show(int num) {
+        for (var vuelo : flights) {
+            if (vuelo.getFlighNumber() == num) {
+                vuelo.flightInfo();
+            } else {
+                System.out.println("ERROR");
+            }
+        }
+    }
+
+    public void show1(String nif) {
+        for (var vuel : flights) {
+            //for (var pasage : flights.)
+        }
+    }
+
+    public void showFlightsFromOrigin(String origin) {
+        for (var flight : flights) {
+            if (flight.getOrigin().equals(origin)) {
+                flight.flightInfo();
+            }
+        }
+    }
+
+    public Flight findFlight(int flightNum) {
+        for (var flght : flights) {
+            if (flght.getFlighNumber() == flightNum) {
+                return flght;
             }
         }
         return null;
     }
 
-    public  void show1 (String nif){
-        for (var vuel: flights){
-            for (var pasage : flights.g)
+    public void showPassengerFlights(String nif) {
+        for (var flight : flights) {
+            if (flight.hasPassenger(nif)) {
+                flight.flightInfo();
+
+            }
         }
+    }
+
+    public Object flndFlight(int num, String nif) {
+        for (var flight : flights) {
+            for (var passager : flight.getPassengers()) {
+                if (passager.getNif().equals(nif) && flight.getFlighNumber() == num) {
+
+                }
+            }
+        }
+        return null;
     }
 
 
